@@ -1,0 +1,63 @@
+%!TEX TS-program = xelatex
+\documentclass[11pt, print]{friggeri-cv}
+\addbibresource{bibliography.bib}
+\begin{document}
+\header{Zhen-Huan Hu}
+       {Senior Biostatistician}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{Contact}
+    \href{mailto:zhu@mcw.edu}{zhu@mcw.edu}
+    Phone: (608)-774-3021
+  \section{Languages}
+    English: proficient
+    Mandarin: native
+    Japanese: conversant
+  \section{Programming}
+    Expert in SAS, R, SQL
+    Competent in Python,
+    Perl, Linux Shell Script
+\end{aside}
+
+\input{experience}
+
+%\clearpage
+
+\section{Publications}
+
+\printbibsection{article}{Articles in peer-reviewed journals}
+\printbibsection{inproceedings}{Abstracts in peer-reviewed conferences}
+\printbibsection{misc}{Presentations and workshop}
+
+\section{Peer-review Activities}
+
+\begin{entrylist}
+  \simpleentry
+    {2012}
+    {Journal reviewer for \textit{Cancer Causes and Control}}
+    {}
+\end{entrylist}
+
+\section{Other Projects}
+
+\begin{entrylist}
+  \simpleentry
+    {2017}
+    {Python script to backup files in TAR archive}
+    {\href{https://github.com/akanosora/backup}{https://github.com/akanosora/backup}}
+  \simpleentry
+    {2015}
+    {Atom language package for SAS}
+    {\href{https://atom.io/packages/language-sas}{https://atom.io/packages/language-sas}}
+  \simpleentry
+    {2012}
+    {The default VIM indent plugin for SAS}
+    {\href{https://github.com/vim-scripts/SAS-Indent}{https://github.com/vim-scripts/SAS-Indent}}
+  \simpleentry
+    {2011}
+    {The default VIM syntax plugin for SAS}
+    {\href{https://github.com/vim-scripts/SAS-Syntax}{https://github.com/vim-scripts/SAS-Syntax}}
+\end{entrylist}
+
+\end{document}
